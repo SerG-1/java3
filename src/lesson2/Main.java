@@ -9,6 +9,7 @@ public class Main {
         System.out.println();
         mass2();
         System.out.println();
+        System.out.println();
         mass3();
     }
         public static void mass(){
@@ -45,11 +46,26 @@ public class Main {
 
     }
         public static void mass3() {
+            int counter = 1;
+            int[][] a = new int[8][8];
+            for (int i = 0; i < a.length; i++) {
+                for (int j = 0; j < a.length; j++) {
+                    a[i][j] = 0;
+
+                    if(i==j||i==(a.length-1)-j&&j==(a.length-1)-i)
+                        a[i][j]=1;
+
+                        System.out.print(a[i][j]+"   ");
+                    }
+                System.out.println();
+                }
+
+            }
 
 
-    }
+        }
 
-}
+
 
 
 
