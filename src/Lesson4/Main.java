@@ -3,8 +3,8 @@ package Lesson4;
 import java.util.Random;
 import java.util.Scanner;
 
-class XOGame {
-    static final int SIZE = 3;
+public class Main{
+    static final int SIZE = 6;
 //   static final int DOTS_TO_WIN = 3;
 
     static final char DOT_X = 'X';
@@ -113,16 +113,19 @@ class XOGame {
     }
 
     static boolean checkWin(char c) {
-        if (map[0][0] == c && map[0][1] == c && map[0][2] == c) { return true; }
-        if (map[1][0] == c && map[1][1] == c && map[1][2] == c) { return true; }
-        if (map[2][0] == c && map[2][1] == c && map[2][2] == c) { return true; }
 
-        if (map[0][0] == c && map[1][0] == c && map[2][0] == c) { return true; }
+        for(int j=0;j<SIZE;j++){
+           for (int i=0;i<SIZE-2;i++) {
+               if (map[j][i] == c && map[j][i+1] == c && map[j][i+2] == c)
+            {return true;} } }
+
+
+       /* if (map[0][0] == c && map[1][0] == c && map[2][0] == c) { return true; }
         if (map[0][1] == c && map[1][1] == c && map[2][1] == c) { return true; }
         if (map[0][2] == c && map[1][2] == c && map[2][2] == c) { return true; }
 
         if (map[0][0] == c && map[1][1] == c && map[2][2] == c) { return true; }
-        if (map[0][2] == c && map[1][1] == c && map[2][0] == c) { return true; }
+        if (map[0][2] == c && map[1][1] == c && map[2][0] == c) { return true; }*/
 
         return false;
     }
