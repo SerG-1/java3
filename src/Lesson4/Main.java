@@ -119,13 +119,21 @@ public class Main{
                if (map[j][i] == c && map[j][i+1] == c && map[j][i+2] == c)
             {return true;} } }
 
+        for(int i=0;i<SIZE;i++){
+            for (int j=0;j<SIZE-2;j++) {
+                if (map[j][i] == c && map[j+1][i] == c && map[j+2][i] == c)
+                {return true;} } }
 
-       /* if (map[0][0] == c && map[1][0] == c && map[2][0] == c) { return true; }
-        if (map[0][1] == c && map[1][1] == c && map[2][1] == c) { return true; }
-        if (map[0][2] == c && map[1][2] == c && map[2][2] == c) { return true; }
+        for(int i=0;i<SIZE;i++){
+            for (int j=0;j<SIZE;j++) {
+                if (i==j&&map[j][i] == c && map[j+1][i+1] == c && map[j+2][i+2] == c)
+                {return true;}
+                else if(i==j+1&&map[j][i] == c && map[j+1][i] == c && map[j+2][i] == c)
+                {return true;}
+                else if(i+1==j&&map[j][i] == c && map[j][i+1] == c && map[j][i+2] == c)
+                {return true;}
+            } }
 
-        if (map[0][0] == c && map[1][1] == c && map[2][2] == c) { return true; }
-        if (map[0][2] == c && map[1][1] == c && map[2][0] == c) { return true; }*/
 
         return false;
     }
