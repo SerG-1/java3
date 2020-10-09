@@ -1,43 +1,28 @@
 package Lesson5;
 
 public class Sotrudnik {
-    private String name;
-    private String color;
+    private String fullname;
+    private String position;
+    private String email;
+    private int tel;
+    private int paycheck;
     private int age;
 
-    public Sotrudnik() {
-        this("noname", "white", 1);
-    }
 
-    public Sotrudnik(String name, String color, int age) {
-        this.name = name;
-        this.color = color;
+    public Sotrudnik(String fullname,String position,String email,int tel,int paycheck,int age) {
+        this.fullname = fullname;
+        this.position = position;
+        this.email = email;
+        this.tel = tel;
+        this.paycheck = paycheck;
         this.age = age;
     }
 
-    public Sotrudnik(String name) {
-        this.name = name;
-    }
 
     public void info() {
-        System.out.printf("Cat %s %s %d\n", name, color, age);
+        System.out.printf("Cat %s %s %s %d %d %d\n", fullname, position, email , tel, paycheck, age );
     }
 
-    public void jump() {
-        System.out.println(name + " jump!");
-    }
-
-    public void sleep() {
-        System.out.println(name + " sleep...");
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getColor() {
-        return color;
-    }
 
     public int getAge() {
         return age;
