@@ -20,7 +20,7 @@ public class Sotrudnik {
 
 
     public void info() {
-        System.out.printf("Cat %s %s %s %d %d %d\n", fullname, position, email , tel, paycheck, age );
+        System.out.printf("Sotrudnik %s %s %s %d %d %d\n", fullname, position, email , tel, paycheck, age);
     }
 
 

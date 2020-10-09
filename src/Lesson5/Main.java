@@ -5,12 +5,9 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-//        Cat cat1 = new Cat("Barsik", "white", 3);
-//
-//        Cat cat2 = new Cat("Murzik", "black", 7);
-//
-//
-//        cat1.info();
+        Sotrudnik Sotrudnik1 = new Sotrudnik("Akakiy Akakiy Akakiyevich", "manager", "akakiy@ya.ru",+70000000 ,13000, 40);
+
+       Sotrudnik1.info();
 //        cat2.info();
 
 
