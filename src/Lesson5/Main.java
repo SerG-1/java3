@@ -17,7 +17,7 @@ public class Main {
           Sotrudnik[1] = new Sotrudnik("Nikiforov Kirill Georgievich", "manager", "nikiforov@ya.ru", 88100000,25000,35);
           Sotrudnik[2] = new Sotrudnik("Gerasimov Lyubomir Frolovich", "konstruktor", "gerasimov@ya.ru", 88200000,39000, 41);
           Sotrudnik[3] = new Sotrudnik("Suvorov Ivan Alvianovich", "ingeneer", "suvorov@ya.ru", 88300000,28000,32);
-          Sotrudnik[4] = new Sotrudnik("Terentev Guriy Anatolievich", "direktor", "terentev@ya.ru", 88400000,1000000,20);
+          Sotrudnik[4] = new Sotrudnik("Terentev Guriy Anatolievich", "direktor", "terentev@ya.ru", 88400000,1000000,60);
 
         for (int i = 0; i < Sotrudnik.length; i++) {
 
