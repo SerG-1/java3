@@ -14,5 +14,12 @@ public class Cat extends Animal {
         this.talonsLength = talonsLength;
     }
 
+    public void run(int a) {
+        if(a<=200)
+        System.out.println(name + " пробежал "+a+" метров");
+        else
+        {System.out.println(name + " не может так далеко бегать!");}
+    }
+
 
 }
