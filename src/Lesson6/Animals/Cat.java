@@ -14,23 +14,5 @@ public class Cat extends Animal {
         this.talonsLength = talonsLength;
     }
 
-    @Override
-    public void voice() {
-        System.out.println(name + " meow");
-    }
 
-    public void findMouse() {
-        System.out.println(name + " find Mouse");
-    }
-
-    @Override
-    public String toString() {
-        return "Cat{" +
-                " name='" + name + '\'' +
-                ", color='" + color + '\'' +
-                ", age=" + age +
-                ", liveCount=" + liveCount +
-                ", talonsLength=" + talonsLength +
-                '}';
-    }
 }

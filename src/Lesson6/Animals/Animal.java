@@ -14,28 +14,15 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public void jump() {
-        System.out.println(name + " jump!");
-    }
-
     public void info() {
         System.out.printf("%s %s %d\n", name, color, age);
     }
-
-    public final void sleep() {
+    public void run() {
+        System.out.println(name + " jump!");
+    }
+    public final void swim() {
         System.out.println(name + " sleep...");
     }
 
 
-
-    public abstract void voice();
-
-    @Override
-    public String toString() {
-        return "Animal{" +
-                "name='" + name + '\'' +
-                ", color='" + color + '\'' +
-                ", age=" + age +
-                '}';
-    }
 }
