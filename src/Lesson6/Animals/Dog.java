@@ -15,8 +15,11 @@ public class Dog extends Animal {
         System.out.println(name + " проплыл "+a+" метров");
     }
     public void run(int a) {
-        if(a<=500)
-            System.out.println(name + " пробежал "+a+" метров");
+        if(a<=500&&a>0) {
+            System.out.println(name + " пробежал "+a+" метров");}
+        else if (a<0){
+            System.out.println("Расстояние не может быть отрицательным!" );
+        }
         else
         {System.out.println(name + " не может так далеко бегать!");}
     }
