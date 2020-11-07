@@ -13,6 +13,7 @@ public class Main {
                 new Dog("Tuzik", "white", 3),
 
         };
+        System.out.println(dog);
         dog.run(50);
         dog.run(501);
         cat.run(50);

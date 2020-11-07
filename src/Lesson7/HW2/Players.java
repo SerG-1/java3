@@ -11,27 +11,20 @@ public class Players {
         this.jumping = jumping;
     }
 
-    public int valuerun(){
-        return running;
-    }
-    public int valuejump(){
-        return jumping;
-    }
-    public void info(){
-        System.out.printf("Спортсмен %s,%d,%d\n",name,running,jumping);
-    }
-    public void jump(){
 
-        System.out.println("Прыгает на "+jumping+" метров");
-    }
     public void move(int a,int b) {
         if (this.running <= a && this.jumping <= b) {
-            System.out.println("Спортсмен " + this.name + " не прошел испытание");
-        } else if(this.running > a && this.jumping > b) {
-            System.out.println("Спортсмен " + this.name + " прошел все испытания");
+            System.out.println("Спортсмен " + this.name + " не прошел испытание, не пробежал "+a+" метров и не перепрыгнул препятствие "+b+" метра");
+        }
+        else if(this.running > a && this.jumping > b) {
+            System.out.println("Спортсмен " + this.name + " прошел все испытания, пробежал "+a+" метров и перепрыгнул препятствие "+b+" метра");
         }
         else if(this.running <=a && this.jumping > b) {
-            System.out.println("Спортсмен " + this.name + " прошел все испытания");
+            System.out.println("Спортсмен " + this.name + " не пробежал "+a+" метров, но в итоге перепрыгнул препятствие высотой "+b+" метра , отдельно от прбежки");
         }
+        if (this.running >a && this.jumping <= b) {
+            System.out.println("Спортсмен " + this.name + " пробежал "+a+" метров, но не перепрыгнул препятствие высотой "+b+" метра");
+        }
+
     }
 }
