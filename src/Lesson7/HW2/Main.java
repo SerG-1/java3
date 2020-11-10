@@ -15,7 +15,7 @@ public class Main {
                 new Players("Dmitry",20,1),
 
         };
-
+        
     for(int i=0;i<player.length;i++) {
     player[i].move(track.disstantion, heigh.height);
     }
