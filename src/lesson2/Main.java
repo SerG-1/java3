@@ -19,7 +19,16 @@ public class Main {
         Min();
         System.out.println();
         mass4();
+        String s="Value = "+2+2;
+        System.out.println(s);
+        System.out.println(new int[][]{{1,2,7},{3,4,5}}[1][2]);
+        for(int i=10;i>0;i++)
+        {}
+        byte a=127;
+        a++;
+       System.out.println("hjg"+a);
     }
+
 
     public static void mass() {
         int a[] = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
