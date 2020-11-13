@@ -15,7 +15,7 @@ public class Main {
                 System.out.print(s+" ");
                 map.put(s, 1);
             } else {
-                map.put(s, (map.get(s) + 1));
+                map.put(s, (map.get(s)+1));
             }
         }
         System.out.print("\n");
