@@ -5,12 +5,15 @@ public class Apple extends Fruits {
     public void name(){
         System.out.println("Яблоко");
     }
-    float weight() {
+    @Override
+    float getWeight() {
         return 1.0f;
     }
 
     @Override
-    float getWeight() {
-        return 0;
+    String getName() {
+        return "Яблок";
     }
+
+
 }

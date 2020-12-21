@@ -14,6 +14,7 @@ public class Main {
         Box<Apple> box1 = new Box<>();
         box.add(5,new Orange());
         box.add(5,new Orange());
+        box.getWeight(new Orange());
 
     }
 
